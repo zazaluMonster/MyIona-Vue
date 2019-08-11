@@ -1,28 +1,75 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view />
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+<style lang="less">
+// less是css的一个扩充，可以让我们css写起来更简单
+.size {
+  width: 100%;
+  height: 100%;
 }
-</script>
-
-<style>
+html,
+body {
+  .size;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  .size;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;//强制div内的元素不随窗口缩小而换行
 }
+.card {
+  margin-bottom: 20px;
+}
+.IonaContent {
+  position: relative;
+  padding: 24px;
+  min-height: 454px;
+  background: #fff;
+}
+ul li {
+  list-style: none;
+}
+.iMessageAvatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+}
+// 富文本
+.w-e-text {
+  padding: 0 10px !important;
+  overflow-y: auto !important;
+}
+.w-e-icon-happy {
+  font-size: 20px !important;
+  overflow-wrap: break-word !important;
+  color: black !important;
+}
+.w-e-text p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", sans-serif !important;
+  font-size: 20px !important;
+  overflow-wrap: break-word !important;
+  color: black !important;
+}
+.w-e-text p > span {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", sans-serif !important;
+  font-size: 20px !important;
+  overflow-wrap: break-word !important;
+  color: black !important;
+}
+.w-e-text span {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", sans-serif !important; 
+  font-size: 20px !important;
+  overflow-wrap: break-word !important;
+  color: black !important;
+}
+
 </style>
