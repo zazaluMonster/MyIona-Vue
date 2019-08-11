@@ -17,7 +17,7 @@ HttpClient | axios@0.19.0
 XSS过滤 | xss@1.0.6
 MD5加密 | md5@2.2.1
 WebSocket | sockjs-client@1.3.0
-- | stompjs@2.3.3
+WebSocket | stompjs@2.3.3
 富文本编辑器 | wangeditor@3.1.1
 图片懒加载 | vue-lazyload@1.3.1
 
