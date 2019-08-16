@@ -138,8 +138,11 @@
           <i-col span="3">
             <strong style="color:black">{{messageDetail.retweetNums == "" ? 0 : messageDetail.retweetNums}}</strong> 转推
           </i-col>
-          <i-col span="19">
+          <i-col span="3">
             <strong style="color:black">{{messageDetail.likeNums == "" ? 0 : messageDetail.likeNums}}</strong> 喜欢
+          </i-col>
+           <i-col span="16">
+            <strong style="color:black">{{messageDetail.viewsNums == "" ? 0 : messageDetail.viewsNums}}</strong> 浏览
           </i-col>
         </Row>
         <Row class="content-middle-footer border">

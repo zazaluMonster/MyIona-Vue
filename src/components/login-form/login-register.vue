@@ -84,7 +84,7 @@
         <RadioGroup v-model="formData.tos">
           <Radio label="tos" >
             我已经阅读过服务条款
-            <a target="_blank" href="tos">服务条款</a>
+            <a target="_blank" href="MyIona/tos">服务条款</a>
           </Radio>
         </RadioGroup>
       </FormItem>

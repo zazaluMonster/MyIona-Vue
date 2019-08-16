@@ -78,10 +78,11 @@ h4 {
         <p></p>
         <ul>
           <li>Vue@2.6.10</li>
-          <li>iView@3.4.2(后续想重构下，用element)</li>
+          <li>iView@3.4.2(后续想重构下，用element, iview坑较多)</li>
           <li>SpringBoot@2.1.6</li>
           <li>MyBatis@3.5.2</li>
-          <li>Ehcache@3.6.3,Redis</li>
+          <li>Ehcache@3.6.3</li>
+          <li>Redis@5.0.5</li>
           <li>消息队列(自我实现,较简单,用于加快服务端响应,将一些复杂且可以延后执行的操作丢进消息队列中异步执行)</li>
           <li>Websocket</li>
           <li>MySQL Community Server@8.0.17</li>
@@ -93,7 +94,7 @@ h4 {
         <ul>
           <li>登录/注册/用户管理</li>
           <li>会话管理</li>
-          <li>简易微博系统，可以发微博，转发，评论，点赞等等</li>
+          <li>简易微博系统，可以发微博，转发，评论，点赞, 浏览数等等</li>
           <li>实时通知系统</li>
           <li>在线聊天室</li>
         </ul>

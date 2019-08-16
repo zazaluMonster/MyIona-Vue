@@ -142,12 +142,12 @@ export default {
     },
     initDataResponse(responseData) {
       this.dataItems = responseData.crewList;
-      this.pagerIndex += 1;
-
       //若发现换一批换到底了，重新第一页开始
-      if(this.dataItems.length == 0){
-        this.pagerIndex = 1
+      if (this.dataItems.length == 0 && this.pagerIndex != 1) {
+        this.pagerIndex = 1;
         this.initData();
+      } else {
+        this.pagerIndex += 1;
       }
     },
     changeData() {
