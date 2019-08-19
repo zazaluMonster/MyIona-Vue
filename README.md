@@ -16,8 +16,7 @@ VUE组件库 | iView@3.4.2
 HttpClient | axios@0.19.0
 XSS过滤 | xss@1.0.6
 MD5加密 | md5@2.2.1
-WebSocket | sockjs-client@1.3.0
-WebSocket | stompjs@2.3.3
+WebSocket | sockjs-client@1.3.0, stompjs@2.3.3
 富文本编辑器 | wangeditor@3.1.1
 图片懒加载 | vue-lazyload@1.3.1
 
@@ -68,7 +67,7 @@ npm run build
 所有的常量properties和常用工具函数BaseUtil都通过`boot.js`注册在Node的全局对象`global`中
 
 1. `global.$prop`访问全部properties
-2. `global.$util`访问常用工具(部分特定的工具，比如HttpUtil，使用import来导入使用，请不要挂载在global中)
+2. `global.$util`访问常用工具(部分特定的工具,由于内容过多，比如HttpUtil，使用import来导入使用，请不要挂载在global中)
 
 >官方状态管理工具vuex
 
@@ -146,3 +145,9 @@ SPA应用将原本后台管理的路由配置转到了前端js进行管理，当
 > XSS过滤
 
 由于本项目实现了一个简易的微博系统，可以发博，转发，点赞，所以会存在XSS风险，故使用了XSS工具，对所有用户发送的内容往后台的内容进行了XSS过滤
+
+> iView
+
+本项目使用了IView来搭建页面效果, 但是经过本项目开发后,还是非常不建议使用iView
+
+详情见: [iView抽屉的一个坑, 手动修改了DOM结构, 导致VUE工作异常](https://www.v2ex.com/t/590284#reply121)
